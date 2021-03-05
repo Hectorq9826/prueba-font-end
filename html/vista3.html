@@ -97,7 +97,14 @@
             </div>
 
             <div class="m-4">
-                <button type="submit" class="btn btn-primary form-control">Guardar</button>
+                <button type="submit" class="btn btn-primary form-control" id="save">Guardar</button>
+
+                <!--Mostrar mensaje al presionar boton-->
+                <script>
+                    document.getElementById('save').onclick = function(){
+                        alert("¡Se han guardado los cambios!")
+                    }
+                </script>
             </div>
         </div>
     </form>

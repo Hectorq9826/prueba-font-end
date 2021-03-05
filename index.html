@@ -39,7 +39,13 @@
 
                 <!--Boton de inicio de sesion-->
                 <div class="m-4">
-                    <button type="submit" class="btn btn-primary form-control">Ingresar</button>
+                    <button type="submit" class="btn btn-primary form-control" id="entrar">Ingresar</button>
+                    <!--Mostrar mensaje al presionar boton-->
+                    <script>
+                        document.getElementById('entrar').onclick = function(){
+                            alert("¡Bienvenido!")
+                        }
+                    </script>
                 </div>
             </div>
         </form>
