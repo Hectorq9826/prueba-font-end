@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Vehiculos</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand m-2" href="../index.html">
+            <img class="d-inline-block align-top" src="../img/car.png" width="30" height="30"> A_A</a>
+            <!--Opciones-->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="vista2.html">Alquileres</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="vista3.html">Registrar Alquiler</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="vista4.html">Vehiculos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Fin de Encabezado-->
+
+    <div class="form-inicar">
+        <div class="container p-4">
+            <h2>Estado de los Vehiculos</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Año</th>
+                        <th scope="col">Placa</th>
+                        <th scope="col">Transmisión</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Costo</th>
+                        <th scope="col">Foto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Conjunto de datos 1-->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Kia</td>
+                        <td>Rio</td>
+                        <td>2019</td>
+                        <td>AF8521</td>
+                        <td>Automática</td>
+                        <td>Rojo</td>
+                        <td>$5/día</td>
+                        <td><img src="../img/autos/kia-rio.jpg" alt="" width="100" height="50"></td>
+                    </tr>
+                    <!--Conjunto de datos 2-->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Nissan</td>
+                        <td>Xtrail</td>
+                        <td>2016</td>
+                        <td>879032</td>
+                        <td>Manual</td>
+                        <td>Blanco</td>
+                        <td>$15/día</td>
+                        <td><img src="../img/autos/nissan-xtrail.png" alt="" width="100" height="50"></td>
+                    </tr>
+                    <!--Conjunto de datos 3-->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Nissan</td>
+                        <td>Kicks</td>
+                        <td>2021</td>
+                        <td>AE3020</td>
+                        <td>Automática</td>
+                        <td>Blanco</td>
+                        <td>$10/día</td>
+                        <td><img src="../img/autos/nissan-kicks.jpg" alt="" width="100" height="70"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <footer class="text-center" style="bottom: 0;"> 
+        © 2020 Copyright
+    </footer>
+</body>
+</html>

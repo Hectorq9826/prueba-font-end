@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Registrar Alquiler</title>
+</head>
+<body>
+     <!--Encabezado-->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand m-2" href="../index.html">
+            <img class="d-inline-block align-top" src="../img/car.png" width="30" height="30"> A_A</a>
+            <!--Opciones-->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="vista2.html">Alquileres</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="vista3.html">Registrar Alquiler</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="vista4.html">Vehiculos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Fin de encabezado-->
+
+    <!--Formulario-->
+    <form class="form-iniciar" action="./vista2.html">
+        <!--Icono de +Usuario-->
+        <div class="text-center mb-4">
+            <img class="mt-4" src="../img/add-group.png" alt="" width="72px" height="72px">
+        </div>
+
+        <div class="container">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre">
+
+                <label for="cedula">Cédula</label>
+                <input type="text" class="form-control" id="cedula" placeholder="8-888-888">
+
+                <label for="telefono">Teléfono</label>
+                <input type="number" class="form-control" id="telefono">
+
+                <label for="direccion">Dirección</label>
+                <input type="text" class="form-control" id="direccion">
+
+                <!--Seleccion del tipo de vehiculo-->
+                <label for="modelo">Tipo de auto</label>
+                <select class="custom-select form-control" id="modelo">
+                    <option selected>Seleccionar</option>
+                    <option value="1">SUV</option>
+                    <option value="2">SUV Compacto</option>
+                    <option value="3">Sedan</option>
+                    <option value="3">Hatchback</option>
+                </select>
+                <!--Seleccion del modelo del vehiculo-->
+                <label for="modelo">Modelo de auto</label>
+                <select class="custom-select form-control" id="modelo">
+                    <option selected>Seleccionar</option>
+                    <option value="1">Kia Rio</option>
+                    <option value="2">Nissan Xtrail</option>
+                    <option value="3">Nissan Kicks</option>
+                    <option value="3">Hyundai Accent</option>
+                </select>
+
+                <label for="placa">Placa</label>
+                <input maxlength="6" type="text" class="form-control" id="placa">
+
+                <label for="dias">Días a rentar</label>
+                <input type="number" class="form-control" id="dias">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <img src="../img/car.png" alt="" class="img-responsive" width="300" height="200px">
+            </div>
+
+            <div class="m-4">
+                <button type="submit" class="btn btn-primary form-control">Guardar</button>
+            </div>
+        </div>
+    </form>
+    <!--Pie de pagina-->
+    <footer class="text-center"> 
+        © 2020 Copyright
+    </footer>
+</body>
+</html>
